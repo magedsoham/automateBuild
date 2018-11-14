@@ -78,7 +78,7 @@ public class Utils {
         runCommand("git checkout " + tag, new File(repoPath));
     }
     public static Collection<?> getTags() throws IOException, InterruptedException {
-        ArrayList <String> tags =new ArrayList<String>(showErrorInLog(runCommand("git tag", new File(MainPage.REPO_FILE))));
+        ArrayList <String> tags =new ArrayList<String>(showErrorInLog(runCommand("git tag", new File(BuildConfiguration.REPO_FILE))));
         return tags;
     }
     public static Collection<?> getBuildTypes() {
